@@ -1,0 +1,37 @@
+[
+    {
+        "id": "6821288b23e1d",
+        "titulo": "tarea 1",
+        "contenido": "ESTUDIAR",
+        "relevancia": "Importante",
+        "color": "amarillo"
+    },
+    {
+        "id": "68213aa9a21e3",
+        "titulo": "Tarea 2",
+        "contenido": "COCINAR",
+        "relevancia": "Muy importante",
+        "color": "rojo"
+    },
+    {
+        "id": "68213ac6e03cb",
+        "titulo": "TAREA 3",
+        "contenido": "ESTUDIAR",
+        "relevancia": "Poco importante",
+        "color": "verde"
+    },
+    {
+        "id": "682ab00bd5a20",
+        "titulo": "COMER",
+        "contenido": "DESAYUNO",
+        "relevancia": "Importante",
+        "color": "amarillo"
+    },
+    {
+        "id": "682ab025a1aae",
+        "titulo": "HOBBY",
+        "contenido": "FUTBOL",
+        "relevancia": "Poco importante",
+        "color": "verde"
+    }
+]

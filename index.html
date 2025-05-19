@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Notas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mis Notas</h1>
+    
+    <form id="notaForm">
+      <div>
+        <label for="titulo">TITULO:</label>
+        <input type="text" id="titulo" required>
+      </div>
+      <div>
+        <label for="contenido">CONTENIDO:</label>
+        <textarea id="contenido" required></textarea>
+      </div>
+      <div>
+        <label for="relevancia">RELEVANCIA:</label>
+        <select id="relevancia" required>
+            <option value="Muy importante">Muy importante</option>
+            <option value="Importante">Importante</option>
+            <option value="Poco importante">Poco importante</option>
+        </select>
+      </div>
+      <button type="submit">Guardar Nota</button>
+    </form>
+    
+    <div id="listaNotas"></div>
+  </div>
+  <button class="dark-mode-button" onclick="toggleDarkMode()">Modo Oscuro</button>
+  <script src="script.js"></script>
+  <script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const button = document.querySelector('.dark-mode-button');
+    button.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+  }
+  </script>
+</body>
+</html>

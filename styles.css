@@ -1,0 +1,201 @@
+/* General */
+body {
+  
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: #f9f9f9;
+      color: #333;
+    
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .dark-mode-button{
+      position: fixed;
+      top: 20px;
+      background-color: #333;
+      color: #f9f9f9;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .dark-mode-button {
+      right: 20px;
+    }
+  
+    
+    .dark-mode-button:hover {
+      background-color: #555;
+    }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
+    linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
+    background-size: 100% 25px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+
+}
+
+  
+  
+  /* Título principal */
+  .container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulario */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-weight: bold;
+  
+    color: #555;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #160909;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 50px;
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #160909;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 84%;
+    margin-left: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3b90c9;
+  }
+  
+  /* Lista de notas */
+  #listaNotas {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 84%;
+    color: white;
+    
+   
+  }
+  
+.nota {
+    border: 1px solid #160909;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+    background-color: #f3e459;
+    
+    
+}
+
+  
+  .nota h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+.nota h3, 
+.nota p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.nota p {
+color: #666;
+}
+  
+  /* Botones de acción en cada nota */
+  .nota button {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Botón Eliminar */
+  .nota button.eliminar {
+    background-color: #f44336;
+    color: white;
+    transition: background-color 0.3s;
+    border: 2px solid #180202;
+  }
+  
+  .nota button.eliminar:hover {
+    background-color: #d32f2f;
+    
+  }
+  
+  /* Botón Editar */
+  .nota button.editar {
+    background-color: #2196F3;
+    color: white;
+    border: 2px solid #180202;
+    transition: background-color 0.3s;
+  }
+  
+  .nota button.editar:hover {
+    background-color: #1976d2;
+  }
+
+  select#relevancia {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  font-size: 14px;
+  border: 2px solid #180202;
+  border-radius: 8px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+/* Colores específicos */
+.nota.rojo {
+    background-color: rgb(238, 160, 160); 
+    color: rgb(250, 147, 147)
+           }
+.nota.amarillo {
+    background-color: rgb(237, 247, 100); 
+    color: yellow
+}
+.nota.verde {
+    background-color: rgb(118, 238, 118); 
+    color: green
+}
+
+ 

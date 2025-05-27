@@ -1,4 +1,4 @@
-### Dificultad: 👹 Medio
+ Dificultad:  Medio
 
 - Como usuario, quiero crear nuevas notas para guardar información importante.
 - Como usuario, quiero editar notas existentes para actualizar su contenido.

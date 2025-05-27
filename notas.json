@@ -1,37 +1,23 @@
 [
     {
-        "id": "6821288b23e1d",
-        "titulo": "tarea 1",
-        "contenido": "ESTUDIAR",
-        "relevancia": "Importante",
-        "color": "amarillo"
-    },
-    {
-        "id": "68213aa9a21e3",
-        "titulo": "Tarea 2",
-        "contenido": "COCINAR",
+        "id": "682aa5bf5bb85",
+        "titulo": "Tarea 4",
+        "contenido": "BARRER PATIO",
         "relevancia": "Muy importante",
         "color": "rojo"
     },
     {
-        "id": "68213ac6e03cb",
-        "titulo": "TAREA 3",
-        "contenido": "ESTUDIAR",
-        "relevancia": "Poco importante",
-        "color": "verde"
+        "id": "6830fbd44be27",
+        "titulo": "BIOLOGIA  TAREA",
+        "contenido": "estudiar el libro de biologia para el jueves, de la pagina 23 a la 44 incluyendo los graficos.",
+        "relevancia": "Muy importante",
+        "color": "rojo"
     },
     {
-        "id": "682ab00bd5a20",
-        "titulo": "COMER",
-        "contenido": "DESAYUNO",
+        "id": "68312277c42f0",
+        "titulo": "TAREA 10",
+        "contenido": "PLANCHAR",
         "relevancia": "Importante",
         "color": "amarillo"
-    },
-    {
-        "id": "682ab025a1aae",
-        "titulo": "HOBBY",
-        "contenido": "FUTBOL",
-        "relevancia": "Poco importante",
-        "color": "verde"
     }
 ]

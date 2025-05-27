@@ -1,179 +1,177 @@
 /* General */
 body {
-  
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      background-color: #f9f9f9;
-      color: #333;
-    
-    }
-    body.dark-mode {
-      background-color: #121212;
-      color: #f0f0f0;
-    }
-    .dark-mode-button{
-      position: fixed;
-      top: 20px;
-      background-color: #333;
-      color: #f9f9f9;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .dark-mode-button {
-      right: 20px;
-    }
-  
-    
-    .dark-mode-button:hover {
-      background-color: #555;
-    }
-  
-  /* Contenedor principal */
-  .container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 50px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #eee8b0;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: #555;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 50px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
     linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
-    background-size: 100% 25px, 100% 100%;
-    background-repeat: repeat, no-repeat;
-
+  background-size: 100% 25px, 100% 100%;
+  background-repeat: repeat, no-repeat;
 }
 
-  
-  
-  /* Título principal */
-  .container h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Formulario */
-  form div {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    margin-left: 50px;
-    font-weight: bold;
-  
-    color: #555;
-  }
-  
-  input[type="text"],
-  textarea {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #160909;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-left: 50px;
-    resize: none;
-  }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #160909;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px;
-    width: 84%;
-    margin-left: 50px;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3b90c9;
-  }
-  
-  /* Lista de notas */
-  #listaNotas {
-    margin-top: 30px;
-    margin-left: 50px;
-    width: 84%;
-    color: white;
-    
-   
-  }
-  
+/* Título principal */
+.container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #160909;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-left: 50px;
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #160909;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 84%;
+  margin-left: 50px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3b90c9;
+}
+
+/* Lista de notas (estilo general) */
+#listaNotas {
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 84%;
+  max-height: none;
+  overflow-y: visible;
+}
+
+/* Vista de lista */
+#listaNotas.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Vista grid */
+#listaNotas.grid-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* espacio entre filas y columnas */
+}
+
+/* Nota */
 .nota {
-    border: 1px solid #160909;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
-    background-color: #f3e459;
-    
-    
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 2px solid #160909;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  width: 100%;
+  transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  /* transición width eliminada para evitar conflicto */
 }
 
-  
-  .nota h3 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-.nota h3, 
-.nota p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  word-break: break-word;
+.nota h3 {
+  margin-top: 0;
+  color: #333;
 }
 
 .nota p {
-color: #666;
+  color: #0a0202;
 }
-  
-  /* Botones de acción en cada nota */
-  .nota button {
-    margin-right: 10px;
-    margin-top: 10px;
-    padding: 8px 12px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Botón Eliminar */
-  .nota button.eliminar {
-    background-color: #f44336;
-    color: white;
-    transition: background-color 0.3s;
-    border: 2px solid #180202;
-  }
-  
-  .nota button.eliminar:hover {
-    background-color: #d32f2f;
-    
-  }
-  
-  /* Botón Editar */
-  .nota button.editar {
-    background-color: #2196F3;
-    color: white;
-    border: 2px solid #180202;
-    transition: background-color 0.3s;
-  }
-  
-  .nota button.editar:hover {
-    background-color: #1976d2;
-  }
 
-  select#relevancia {
+/* Botones en nota */
+.nota button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nota button.eliminar {
+  background-color: #f44336;
+  color: white;
+  transition: background-color 0.3s;
+  border: 2px solid #180202;
+}
+
+.nota button.eliminar:hover {
+  background-color: #d32f2f;
+}
+
+.nota button.editar {
+  background-color: #2196f3;
+  color: white;
+  border: 2px solid #180202;
+  transition: background-color 0.3s;
+}
+
+.nota button.editar:hover {
+  background-color: #1976d2;
+}
+
+/* Selector */
+select#relevancia {
   width: 40%;
   padding: 10px;
   margin-bottom: 15px;
@@ -184,18 +182,153 @@ color: #666;
   color: #333;
   transition: all 0.3s ease;
 }
-/* Colores específicos */
+
+/* Colores por relevancia */
 .nota.rojo {
-    background-color: rgb(238, 160, 160); 
-    color: rgb(250, 147, 147)
-           }
-.nota.amarillo {
-    background-color: rgb(237, 247, 100); 
-    color: yellow
-}
-.nota.verde {
-    background-color: rgb(118, 238, 118); 
-    color: green
+  background-color: rgb(238, 160, 160);
+  color: rgb(250, 147, 147);
 }
 
- 
+.nota.amarillo {
+  background-color: rgb(237, 247, 100);
+  color: yellow;
+}
+
+.nota.verde {
+  background-color: rgb(118, 238, 118);
+  color: green;
+}
+
+/* Animación de resaltado */
+@keyframes bordePulse {
+  0% {
+    border-width: 2px;
+  }
+  25% {
+    border-width: 4px;
+  }
+  50% {
+    border-width: 6px;
+  }
+  75% {
+    border-width: 4px;
+  }
+  100% {
+    border-width: 2px;
+  }
+}
+
+.resaltado {
+  border: 2px solid #18f7ff;
+  background-color: #e6ffe6;
+  animation: bordePulse 2.5s ease-in-out;
+}
+
+/* Botón cambiar vista */
+#cambiarVista {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  border: 2px solid #160909;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #1e90ff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+#cambiarVista:hover {
+  background-color: #006ad1;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: 88%;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"],
+#ordenar {
+  flex: 1;
+  padding: 20px 20px;
+  background-color: #8725e2;
+  color: white;
+  border: 1px solid #160909;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 25px;
+}
+
+button[type="submit"]:hover,
+#ordenar:hover {
+  background-color: #60059c;
+}
+
+/* Ajustes para vista lista */
+#listaNotas.list-view .nota {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  box-shadow: none;
+}
+
+/* --- MODIFICACIONES PARA VISTA GRID CON BOTONES ALINEADOS --- */
+#listaNotas.grid-view .nota {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px; /* Altura mínima para igualar notas */
+  width: 100%; /* tamaño controlado por grid */
+  opacity: 1;
+  transform: translateY(-5px) scale(0.95);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  /* background-color eliminado para que se mantenga el color de relevancia */
+  border: 2px solid #160909;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hace que títulos y textos ocupen el espacio flexible */
+.nota > h3,
+.nota > p {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  color: #0a0202;
+}
+
+/* Colores para texto en modo grid respetando relevancia */
+#listaNotas.grid-view .nota.rojo h3,
+#listaNotas.grid-view .nota.rojo p {
+  color: rgb(12, 5, 5);
+}
+
+#listaNotas.grid-view .nota.amarillo h3,
+#listaNotas.grid-view .nota.amarillo p {
+  color: rgb(7, 7, 0);
+}
+
+#listaNotas.grid-view .nota.verde h3,
+#listaNotas.grid-view .nota.verde p {
+  color: green;
+}
+
+/* Contenedor de botones para alinearlos abajo */
+.nota .botones {
+  display: flex;
+  gap: 10px;
+  margin-top: auto; /* empuja botones hacia abajo */
+}
+
+/* Ajusta margen-top de botones en grid para que no se duplique */
+#listaNotas.grid-view .nota button {
+  margin-top: 0;
+}

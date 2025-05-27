@@ -69,8 +69,3 @@ switch ($accion) {
     default:
         echo json_encode(['exito' => false, 'mensaje' => 'Acción no válida']);
 }
-
-
-
-
-
